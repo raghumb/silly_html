@@ -1,0 +1,93 @@
+
+
+function replacecust(str, find, replace) {
+  var regex = new RegExp(find, "g");
+  return str.replace(regex, replace);
+  //return str.replace(/, 'g'), replace);
+}
+
+function encode(str) {
+  str = str.toLowerCase();
+  str = replacecust(str, "upper alpha", "A");
+  str = replacecust(str, "upper bravo", "B");
+  str = replacecust(str, "upper charlie", "C");
+  str = replacecust(str, "upper delta", "D");
+  str = replacecust(str, "upper england", "E");
+  str = replacecust(str, "upper flower", "F");
+  str = replacecust(str, "upper gold", "G");
+  str = replacecust(str, "upper hotel", "H");
+  str = replacecust(str, "upper india", "I");
+  str = replacecust(str, "upper jam", "j");
+  str = replacecust(str, "upper kilo", "K");
+  str = replacecust(str, "upper lima", "L");
+  str = replacecust(str, "upper mike", "M");
+  str = replacecust(str, "upper november", "N");
+  str = replacecust(str, "upper oscar", "O");
+  str = replacecust(str, "upper papa", "P");
+  str = replacecust(str, "upper queen", "Q");
+  str = replacecust(str, "upper rainbow", "R");
+  str = replacecust(str, "upper singapore", "S");
+  str = replacecust(str, "upper tango", "T");
+  str = replacecust(str, "upper uniform", "U");
+  str = replacecust(str, "upper victory", "V");
+  str = replacecust(str, "upper window", "W");
+  str = replacecust(str, "upper christmas", "X");
+  str = replacecust(str, "upper yes", "Y");
+  str = replacecust(str, "upper zulu", "Z");
+
+  str = replacecust(str, "alpha", "a");
+  str = replacecust(str, "bravo", "b");
+  str = replacecust(str, "charlie", "c");
+  str = replacecust(str, "delta", "d");
+  str = replacecust(str, "england", "e");
+  str = replacecust(str, "flower", "f");
+  str = replacecust(str, "gold", "g");
+  str = replacecust(str, "hotel", "h");
+  str = replacecust(str, "india", "i");
+  str = replacecust(str, "jam", "j");
+  str = replacecust(str, "kilo", "k");
+  str = replacecust(str, "lima", "l");
+  str = replacecust(str, "mike", "m");
+  str = replacecust(str, "november", "n");
+  str = replacecust(str, "oscar", "o");
+  str = replacecust(str, "papa", "p");
+  str = replacecust(str, "queen", "q");
+  str = replacecust(str, "rainbow", "r");
+  str = replacecust(str, "singapore", "s");
+  str = replacecust(str, "tango", "t");
+  str = replacecust(str, "uniform", "u");
+  str = replacecust(str, "victory", "v");
+  str = replacecust(str, "window", "w");
+  str = replacecust(str, "christmas", "x");
+  str = replacecust(str, "yes", "y");
+  str = replacecust(str, "zulu", "z");
+  str = replacecust(str, "white", "(");
+
+  str = replacecust(str, "black", ")");
+
+  str = replacecust(str, "blue", "[");
+
+  str = replacecust(str, "green", "]");
+
+  str = replacecust(str, "orange", "{");
+
+  str = replacecust(str, "yellow", "}");
+
+  str = replacecust(str, "elephant", ":");
+
+  str = replacecust(str, "dog", ";");
+
+  str = replacecust(str, "china", "a");
+
+  str = replacecust(str, "japan", "'");
+
+
+    str = replacecust(str, / /, "");
+    str = replacecust(str, "space",  ' ');
+
+  str = replacecust(str, "tab", "/t");
+
+  str = replacecust(str, "tiger", "val");
+  str = replacecust(str, "monkey", "\n");
+  return str;
+}
